@@ -81,7 +81,6 @@ db.alunos.find().pretty();
 db.alunos.findOne()
 ```
 
-
 - Comando para contar o número de documentos em uma coleção:
 ```bash
 db.alunos.count()
@@ -112,4 +111,5 @@ db.alunos.remove({'sobrenome':'Ferreira Martins'})
 
 ## Versão
 **MongoDB** - 7.0.16
+
 **PHP** - 8.3
