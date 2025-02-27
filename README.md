@@ -1,14 +1,10 @@
 # nanodegreePhpMongoDB
 Projeto referente ao Nanodegree MongoDB - Introdução Prática da faculdade Impacta 
+<br>
+Este material também servirá como um mapa mental estudantil, auxiliando na compreensão e revisão dos conceitos abordados durante o curso. 
 
 ## Instalação
 para instalar o MongoDB foi necessário acessar esse [site](https://www.mongodb.com/try/download/community) e instalar a versão para windows X64 e **MongoDB** na versão: 7.0.16 no formato MSI. E para melhor visualização durante a instalação também foi baixado o MongoDB Compass.
-
-## Códigos
-- **testes**
-    - **teste.php**: Contém um código que exibirá um hello-wolrd e as informações do php para saber que a instalação do php esta correta.
-
-    - **testeMongo.php**: Fazendo conexão com o banco de dados MongoDB.
 
 ## MongoDB Comandos
 - Para criar um usuário:
@@ -108,6 +104,15 @@ db.alunos.update({ },{ $set: { 'aprovado': true  } },{ multi: true })
 ```bash
 db.alunos.remove({'sobrenome':'Ferreira Martins'})
 ```
+
+## Comandos Terminal:
+- Para iniciar um servidor web local e executar arquivos PHP dentro do diretório atual, utilize o comando:
+
+```bash
+php -S localhost:8000
+```
+
+Esse comando inicia um servidor embutido do PHP, permitindo acessar arquivos `.php` diretamente pelo navegador. *Importante:* O servidor apenas executará arquivos PHP presentes na pasta onde o comando foi executado. Para acessar um arquivo específico, utilize `http://localhost:8000/seuarquivo.php` no navegador.
 
 ## Versão
 **MongoDB** - 7.0.16
